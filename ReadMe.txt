@@ -1,0 +1,7 @@
+Company Adjustment Management Tool
+
+The tool allows for a better understanding of profits earned from each employee based on different parameters. The tool uses the Model-View-Controller (MVC) model. The "View" class contains all GUI preferences, while the "Model" class acts as a contact between the Company class and the applied methods. The "Controller" class acts as a contact between the view and model.
+
+The "Company" class contains specific qualities, a vector of all employees, and a vector of all departments. The "Department" class contains specific qualities and a vector of roles, while the "Role" class contains specific qualities and a vector of all employees assigned to the role. The "Employee" class contains specific qualities and has three derived classes: "BaseWageEmployee" for employees who work by base wage (160 monthly hours), "BaseWageNSalesEmployee" for employees who work by base wage and (160 monthly hours) sales, and "HourlyWageEmployee" for employees who work per hour (unlimited amount of hours).
+
+The tool also has exceptions, such as the Year Exception, Digits Exception, ID inspections, Empty Fields Exception, Element Exists Exception, and Times Exception. Each of the inspections has its exception class. Additionally, the tool has two interfaces: "Issynchronizable" to define if an element is synchronized (e.g., if a department is defined by specific working hours) and "IsChangeable" to define if an element is changeable (only for elements that were defined as synchronizable).
